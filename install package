@@ -1,0 +1,46 @@
+ https://www.youtube.com/watch?v=e2Ax71aksNI
+ https://www.youtube.com/watch?v=RL0zqw6CqfA
+ dotnet add package Microsoft.EntityFrameworkCore.InMemory
+ dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+ dotnet add package Microsoft.EntityFrameworkCore.Tools
+ dotnet add package Microsoft.EntityFrameworkCore.Design
+
+ System.Data.SqlClient
+
+ dotnet tool install --global dotnet-ef
+ dotnet tool update --global dotnet-ef
+
+cat << \EOF >> ~/.bash_profile
+# Add .NET Core SDK tools
+export PATH="$PATH:/home/ezequias/.dotnet/tools"
+EOF
+
+ export PATH="$PATH:/home/ezequias/.dotnet/tools"
+
+ instalar extenção vscode  Nuget Gallery
+
+
+
+ links útéis:
+ https://medium.com/localizalabs/utilizando-entity-framework-core-codefirst-com-mysql-8480b4fc4198
+
+ https://blog.balta.io/ef-crud/
+ https://blog.balta.io/sql-server-docker/
+
+
+ Server=localhost,1433;Database=balta;User ID=sa;Password=1q2w3e4r@#$
+
+ https://www.macoratti.net/21/04/docker_sqlasp1.htm
+ https://gist.github.com/jjuanrivvera99/e4357795b5f9ba239533fbd849bd008e#file-mssql-docker-compose-yml-L15
+
+ https://www.linkedin.com/pulse/run-sql-server-2022-linux-container-images-docker-dp-bhatt-4dige
+
+ https://infinity-arc.github.io/mssql-docker-compose/
+
+ https://www.youtube.com/watch?v=E1cDaQEBXGE
+
+ Comando completo:
+sudo docker run --network host -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=senha@aqui" --name sqlarchlinux -p 1433:1433 -v sqlserver:/var/opt/mssql -d mcr.microsoft.com/mssql/server:2019-CU14-ubuntu-20.04
+
+dotnet ef migrations Inicial
+dotnet ef database update

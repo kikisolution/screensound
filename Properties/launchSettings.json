@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "_02_criandoApi": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7276",
+      "launchBrowser": false
+    }
+  }
+}
